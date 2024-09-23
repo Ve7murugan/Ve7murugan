@@ -1,0 +1,16 @@
+ #include <stdio.h>
+
+int main() {
+    int age;
+    printf("enter the age:");
+    scanf("%d",&age);
+    {
+    if(age<=12)
+    printf("ne kolantha thambi");
+    else if(age>12 && age<=19)
+    printf("ne valanthuta");
+    else
+    printf("poda kelatu phttps://www.onlinegdb.com/#editor_1ayley");
+    }
+    return 0;
+}
