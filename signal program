@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+
+{
+    char colour;
+    printf(" enter the signal colour");
+    scanf("%c",&colour);
+    switch(colour)
+    {
+        case 'r':
+        printf("stop");
+        break;
+        
+        case 'y':
+        printf("get ready");
+        break;
+        
+        case 'g':
+        printf("go");
+        break;
+        
+        default:
+        printf("invalid input");
+        break;
+    }
+
+        
+        
+        
+        
+        
+    
+}
