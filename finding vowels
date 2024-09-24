@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+
+
+
+int main()
+{
+      int i,add=0,s;
+    char str[50];
+    printf("enter the string:");
+    scanf("%s",str);
+    for(i=0;i<=strlen(str);i++)
+    {
+        printf("%C",str[i]);
+        if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||     str[i]=='u')
+        {
+            add+=1;
+            
+        }
+    
+    }
+      printf("number of leters in the vowles %s;%d",str,add);
+      return 0;
+}
+
