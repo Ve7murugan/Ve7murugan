@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    printf("\n bitwise &:%d",a&b);
+    printf("\n bitwise ^:%d",a^b);
+    printf("\n bitwise !:%d",~(a));
+    printf("\n bitwise <<:%d",a<<2);
+    printf("\n bitwise >>:%d",a>>2);
+   
+    
+}
