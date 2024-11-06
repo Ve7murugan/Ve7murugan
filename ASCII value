@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main() {
+    char S[1000];
+    int frequency[256] = {0}; 
+    int max_odd_freq = 0;
+    int result_char = -1;
+    int i = 0;
+    char ch;
+    while ((ch = getchar()) != '\n' && ch != EOF) {
+        S[i++] = ch;
+    }
+    S[i] = '\0'; 
+    for (i = 0; S[i] != '\0'; i++) {
+        int ascii_value = (int)S[i];
+        frequency[ascii_value]++;
+    }
+    for (i = 0; i < 256; i++) {
+        if (frequency[i] % 2 != 0) {  
+            if (frequency[i] > max_odd_freq) {
+                max_odd_freq = frequency[i];
+                result_char = i;
+            }
+        }
+    }
+    if (result_char != -1) {
+        printf("%d\n", result_char);
+    } else {
+        printf("No character with an odd frequency found.\n");
+    }
+
+    return 0;
+}
